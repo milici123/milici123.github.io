@@ -1,0 +1,98 @@
+body{
+    background-color: black;
+}
+.card{
+    position: relative;
+    border-radius: 10px;
+    width: 1200px;
+    height: 400px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    filter: grayscale(100%);
+    top: 125px;
+    overflow: hidden;
+}
+.back{
+    border-radius: 5px;
+    width: 1550px;
+    height: 2400px;
+    background-color: rgba(87, 87, 87, 0.466);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    box-shadow: 0 0 20px rgba(133, 133, 133, 0.452);
+}
+.img1{
+    position: absolute;
+    right: -46px;
+    bottom: 0px;
+    width: auto;
+    height: 400px;
+}
+h1{
+    position: absolute;
+    font-size: 50px;
+    top: 50px;
+    left: 17px;
+}
+p{
+    position: absolute;
+    bottom: 130px;
+    text-align: left;
+    left: 17px;
+    color: transparent;
+}
+.card:hover{
+    transform: scale(1.05);
+    color: black;
+    filter: grayscale(0%);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+.card:hover p{
+    color: black;
+}
+.card:hover #img1{
+    filter: drop-shadow(1px 1px 20px blue);
+}
+.card:hover #img2{
+    filter: drop-shadow(1px 1px 20px red);
+}
+.card:hover #img3{
+    filter: drop-shadow(1px 1px 20px rgb(97, 97, 97));
+}
+#img0{ 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(1px 1px 10px rgb(255, 238, 0));   
+}
+.p1{
+    position: absolute;
+    top: 145px;
+}
+.p2{
+    position: absolute;
+    top: 145px;    
+}
+#img3{
+    right: 10px;
+}
+#img2{
+    right: -20px;    
+}
+main{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    text-align: center;
+    color: #fff;
+}
+#img000{
+    border-radius: 10px;
+}
