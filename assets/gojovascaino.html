@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo2.css" type="text/css">
+</head>
+
+<body>
+    <img src="vascaino.jpeg" alt="">
+    <h1>Gojo foi de vasco, hoje em dia se chama go e jo</h1>
+    <main class="container">
+        <div class="modal">
+            <h2>Porque gojo morre</h2>
+            <span>
+                Gojo morreu porque foi demorado demaisp ara matar o subuxa e acabou perdendo devio ao mahoraga ter se
+                adaptado a sua defesa definitiva
+            </span>
+            <button class="btn-close" onclick="onClose()">Fechar</button>
+        </div>
+    </main>
+    <button class="btn-open" onclick="onOpen()">Abrir modal</button>
+    <div class="content">
+        <h1>Como foi a morte dele</h1>
+        <h2>Alerta de spoiler</h2>
+        <p>
+            1. <strong>Mahoraga e a Técnica da Infinitude:</strong>
+            - Mahoraga manipulou a Energia Amaldiçoada ao redor de Gojo, tornando sua Técnica da Infinitude ineficaz.
+            - Isso preparou o cenário para o confronto fatal.
+        </p>
+    </div>
+    <button onclick="downloadPdf()">Download</button>
+    <script>
+        const modal = document.querySelector('.container');
+        function onOpen() {
+            modal.classList.add('active');
+        }
+        function onClose() {
+            modal.classList.remove('active');
+        }
+
+        function downloadPdf() {
+            const item = document.querySelector(".content");
+            var opt = {
+                margin: 1,
+                filename: 'file.pdf',
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+            html2pdf().set(opt).from(item).save();
+        }
+
+    </script>
+</body>
+
+</html>
